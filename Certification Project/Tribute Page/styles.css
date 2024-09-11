@@ -1,0 +1,52 @@
+#image {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#img-caption {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(133, 199, 199);
+    margin: 10px auto;
+}
+
+h3{
+    text-align: center;
+    margin-top: 0;
+}
+
+#tribute-info{
+    background-color: rgb(205, 244, 236);
+    padding: 30px;
+}
+
+ul{
+    margin-left: 10px;
+}
+
+li{
+    padding-top: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+footer{
+    padding: 20px;
+}
+
+footer a{
+    color: rgb(112, 20, 20);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
