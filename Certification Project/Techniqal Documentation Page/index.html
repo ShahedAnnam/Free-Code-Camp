@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Document</title>
+</head>
+
+<body>
+
+    <aside>
+        <nav id="navbar">
+
+            <header>
+                <h1>Python Documentation</h1>
+            </header>
+
+            <a href="#Python_Introduction" class="nav-link">Python Introduction</a>
+
+            <a href="#Python_Syntax" class="nav-link">Python Syntax</a>
+
+            <a href="#Python_Comments" class="nav-link">Python Comments</a>
+
+            <a href="#Python_Variables" class="nav-link">Python Variables</a>
+
+            <a href="#Python_Numbers" class="nav-link">Python Numbers</a>
+
+
+
+        </nav>
+    </aside>
+
+    <main id="main-doc">
+        <section class="main-section" id="Python_Introduction">
+            <header>
+                <h1>Python Introduction</h1>
+            </header>
+
+            <h2>What is Python?</h2>
+
+            <p>
+                Python is a popular programming language. It was created by Guido van
+                Rossum, and released in 1991.
+            </p>
+
+            <p>It is used for:</p>
+
+            <ul>
+                <li>web development (server-side),</li>
+                <li>software development,</li>
+                <li>mathematics,</li>
+                <li>system scripting.</li>
+            </ul>
+
+            <h2>What can Python do?</h2>
+
+            <ul>
+                <li>Python can be used on a server to create web applications.</li>
+                <li>Python can be used alongside software to create workflows.</li>
+                <li>
+                    Python can connect to database systems. It can also read and modify
+                    files.
+                </li>
+                <li>
+                    Python can be used to handle big data and perform complex
+                    mathematics.
+                </li>
+                <li>
+                    Python can be used for rapid prototyping, or for production-ready
+                    software
+                </li>
+            </ul>
+
+            <h2>Why Python?</h2>
+
+            <ul>
+                <li>
+                    Python works on different platforms (Windows, Mac, Linux, Raspberry
+                    Pi, etc).
+                </li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>
+                    Python has syntax that allows developers to write programs with
+                    fewer lines than some other programming languages.
+                </li>
+                <li>
+                    Python runs on an interpreter system, meaning that code can be
+                    executed as soon as it is written. This means that prototyping can
+                    be very quick.
+                </li>
+                <li>
+                    Python can be treated in a procedural way, an object-oriented way or
+                    a functional way.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Python_Syntax">
+            <header>
+                <h1>Python Syntax</h1>
+            </header>
+
+            <h2>Execute Python Syntax</h2>
+
+            <p>
+                As we learned in the previous page, Python syntax can be executed by
+                writing directly in the Command Line:
+            </p>
+
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+                >>> print("Hello, World!") <br />
+                Hello, World!           </div>
+          </code>
+            </div>
+
+           
+
+            <p>
+                Or by creating a python file on the server, using the .py file
+                extension, and running it in the Command Line:
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+                C:\Users\Your Name>python myfile.py
+            </div>
+          </code>
+            </div>
+
+
+            <h2>Python Indentation</h2>
+
+            <p>
+                Indentation refers to the spaces at the beginning of a code line.
+                Where in other programming languages the indentation in code is for
+                readability only, the indentation in Python is very important. Python
+                uses indentation to indicate a block of code.
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+                if 5 > 2: <br />
+                &nbsp; print("Five is greater than two!")
+            </div>
+          </code>
+            </div>
+            
+        </section>
+
+        <section class="main-section" id="Python_Comments">
+            <header>
+                <h1>Python Comments</h1>
+            </header>
+
+            <p>
+                Comments can be used to explain Python code. Comments can be used to
+                make the code more readable. Comments can be used to prevent execution
+                when testing code.
+            </p>
+
+            <p>Comments starts with a #, and Python will ignore them:</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+              #This is a comment <br />
+              print("Hello, World!")
+            </div>
+          </code>
+            </div>
+
+            <p>
+                Comments can be placed at the end of a line, and Python will ignore
+                the rest of the line:
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">print("Hello, World!") #This is a comment</div>
+          </code>
+            </div>
+
+            <p>
+                A comment does not have to be text that explains the code, it can also
+                be used to prevent Python from executing code:
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+              #print("Hello, World!") <br />
+              print("Cheers, Mate!")
+            </div>
+          </code>
+            </div>
+
+            <h2>Multiline Comments</h2>
+
+            <p>
+                Python does not really have a syntax for multiline comments. <br />
+                To add a multiline comment you could insert a # for each line:
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+              #This is a comment <br />
+              #written in <br />
+              #more than just one line <br />
+              print("Hello, World!")
+            </div>
+          </code>
+            </div>
+
+            <p>
+                Or, not quite as intended, you can use a multiline string. Since
+                Python will ignore string literals that are not assigned to a
+                variable, you can add a multiline string (triple quotes) in your code,
+                and place your comment inside it:
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+            <div class="code">
+              """ <br />
+              This is a comment <br />
+              written in <br />
+              more than just one line <br />
+              """ <br />
+              print("Hello, World!") <br />
+            </div>
+          </code>
+            </div>
+
+            <p>
+                As long as the string is not assigned to a variable, Python will read
+                the code, but then ignore it, and you have made a multiline comment.
+            </p>
+        </section>
+
+        <section class="main-section" id="Python_Variables">
+            <header>
+                <h1>Python Variables</h1>
+            </header>
+
+            <p>Variables are containers for storing data values.</p>
+
+            <h2>Creating Variables</h2>
+            <p>
+                Python has no command for declaring a variable. <br />
+                Python has no command for declaring a variable.
+            </p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                    <div class="code">
+                        x = 5 <br>
+                        y = "John" <br>
+                        print(x) <br>
+                        print(y) <br>
+                    </div>
+                </code>
+            </div>
+
+            <p>Variables do not need to be declared with any particular type,
+                and can even change type after they have been set.</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                        <div class="code">
+                            x = 4       # x is of type int <br>
+                            x = "Sally" # x is now of type str <br>
+                            print(x)
+                        </div>
+                    </code>
+            </div>
+
+            <h2>Casting</h2>
+
+            <p>If you want to specify the data type of a variable,
+                this can be done with casting.</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                        <div class="code">
+                            x = str(3)    # x will be '3' <br>
+                            y = int(3)    # y will be 3 <br>
+                            z = float(3)  # z will be 3.0 <br>
+                        </div>
+                    </code>
+            </div>
+
+            <h2>Get the Type</h2>
+            <p>You can get the data type of a variable with the type() function.</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                        <div class="code">
+                            x = 5 <br>
+                            y = "John"  <br>
+                            print(type(x))  <br>
+                            print(type(y))  <br>
+                        </div>
+                    </code>
+            </div>
+
+
+        </section>
+
+        <section class="main-section" id="Python_Numbers">
+            <header>
+                <h1>Python Numbers</h1>
+            </header>
+
+            <p>There are three numeric types in Python:</p>
+
+            <ul class="number">
+                <li>int</li>
+                <li>float</li>
+                <li>complex</li>
+            </ul>
+
+            <p>Variables of numeric types are created when you assign a value to them:</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                    <div class="code">
+                        x = 1    # int  <br>
+                        y = 2.8  # float  <br>
+                        z = 1j   # complex  <br>
+                    </div>
+                </code>
+            </div>
+
+            <p>To verify the type of any object in Python, use the type() function:
+                Example</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+
+                <code>
+                    <div class="code">
+                        print(type(x)) <br>
+                        print(type(y)) <br>
+                        print(type(z)) <br>
+                    </div>
+                </code>
+            </div>
+
+            <h2>Int</h2>
+            <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+                <h6>Integers:</h6>
+
+                <code>
+                    <div class="code">
+                        x = 1  <br>
+                        y = 35656222554887711  <br>
+                        z = -3255522  <br>
+                        
+                        print(type(x))   <br>
+                        print(type(y))  <br>
+                        print(type(z))   <br>
+                    </div>
+                </code>
+            </div>
+
+            <h2>float</h2>
+            <p>Float, or "floating point number" is a number, positive or negative,
+                containing one or more decimals.</p>
+
+            <div class="codeblock">
+                <h4>Example</h4>
+                <h6>Floats:</h6>
+
+                <code>
+                    <div class="code">
+                        x = 1.10  <br>
+                        y = 1.0  <br>
+                        z = -35.59  <br>
+                        
+                        print(type(x))   <br>
+                        print(type(y))  <br>
+                        print(type(z))   <br>
+                    </div>
+                </code>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

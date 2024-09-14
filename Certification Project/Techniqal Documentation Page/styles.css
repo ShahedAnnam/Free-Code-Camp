@@ -1,0 +1,60 @@
+h1{
+    font-size: 36px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+nav header{
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    border-top: 1px solid;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+
+
+a:visited{
+    color: black;
+}
+
+@media only screen and (min-width: 1000px) {
+    body{
+        display: flex;
+    }
+}
+
+
+.main-section{
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.codeblock{
+    background-color: rgb(233, 231, 231);
+
+    padding: 2px;
+    padding-bottom: 30px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.code{
+    width: 80%;
+    height: 15%;
+    background-color: #fff;
+    border: 1px  black;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(78, 10, 10);
+}
