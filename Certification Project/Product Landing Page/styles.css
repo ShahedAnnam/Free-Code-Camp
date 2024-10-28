@@ -2,14 +2,21 @@
     margin: 0;
 }
 
+body{
+    background-color: #D1E9F6;
+}
+
 
 /*  header section */
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(184, 182, 182);
+    background-color: #FF577F;
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 #logo-heading{
@@ -32,6 +39,9 @@ ul{
 
 ul li a{
     text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(9, 32, 32);
     padding: 30px;
 }
 
@@ -40,20 +50,59 @@ ul li a{
 /*    Started section    */
 
 #started{
+    margin-top: 80px;
     text-align: center;
+}
+
+#started form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#started h1{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+#started #email{
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: #F1EAFF;
+    border: 1px solid brown;
+    border-radius: 10px;
+}
+
+#started #submit{
+    font-size: 20px;
+    border: 1px solid #EE4B2B;
+    background-color: bisque;
 }
 
 
 
 /*     Features Section      */
 
-#features .bornona{
-    display: flex;
+#features{
+    margin: 40px 300px;
 }
 
+#features .bornona{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+#features .logo{
+    margin-right: 60px;
+}
+
+
+
 #features img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -63,6 +112,7 @@ ul li a{
 
 #works{
     text-align: center;
+    margin-bottom: 100px;
 }
 
 
@@ -72,11 +122,61 @@ ul li a{
 
 #price{
     display: flex;
-    justify-content: space-around;
-
+    gap: 40px;
+    justify-content: center;
+    margin: 20px 100px;
 }
 
 #price .box{
-    width: 400px;
+    width: 300px;
+    padding: 10px 30px;
+    text-align: center;
     border: 1px solid brown;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+#price .box p{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+    #price{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+/*        footer        */
+
+#footer{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #DADDB1;
+    padding-left: 500px;
+}
+
+#footer p{
+    margin-left: 50px;
+}
+
+#footer ul{
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#footer ul li{
+    padding: 0 20px;
+    font-weight: 800;
 }
